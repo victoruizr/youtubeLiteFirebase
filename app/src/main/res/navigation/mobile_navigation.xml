@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/login2">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.firebase.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_info_Mensaje"
+            app:destination="@id/info_Mensaje" />
+        <action
+            android:id="@+id/action_nav_home_to_addvideo"
+            app:destination="@id/addvideo" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.firebase.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.firebase.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/restablecer"
+        android:name="com.example.firebase.Restablecer"
+        android:label="Restablecer" />
+    <fragment
+        android:id="@+id/login2"
+        android:name="com.example.firebase.Login"
+        android:label="Login" >
+        <action
+            android:id="@+id/action_login2_to_nav_home"
+            app:destination="@id/nav_home" />
+        <action
+            android:id="@+id/action_login2_to_restablecer"
+            app:destination="@id/restablecer" />
+        <action
+            android:id="@+id/action_login2_to_registrarse"
+            app:destination="@id/registrarse" />
+    </fragment>
+    <fragment
+        android:id="@+id/info_Mensaje"
+        android:name="com.example.firebase.Info_Mensaje"
+        android:label="fragment_info__mensaje"
+        tools:layout="@layout/fragment_info__mensaje" >
+        <action
+            android:id="@+id/action_info_Mensaje_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/perfil"
+        android:name="com.example.firebase.Perfil"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" />
+    <fragment
+        android:id="@+id/cerrarSesion"
+        android:name="com.example.firebase.CerrarSesion"
+        android:label="fragment_cerrar_sesion"
+        tools:layout="@layout/fragment_cerrar_sesion" >
+        <action
+            android:id="@+id/action_cerrarSesion_to_login2"
+            app:destination="@id/login2" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrarse"
+        android:name="com.example.firebase.registrarse"
+        android:label="registrarse" />
+    <fragment
+        android:id="@+id/addvideo"
+        android:name="com.example.firebase.addvideo"
+        android:label="fragment_addvideo"
+        tools:layout="@layout/fragment_addvideo" />
+</navigation>

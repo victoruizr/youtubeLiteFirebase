@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1012599082815",
+    "firebase_url": "https://videos-fe898-default-rtdb.firebaseio.com",
+    "project_id": "videos-fe898",
+    "storage_bucket": "videos-fe898.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1012599082815:android:a8fd5f21fd113686684d8a",
+        "android_client_info": {
+          "package_name": "com.example.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1012599082815-conq3vg360mqoqr5r1uh025fn8l378qj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZIPTHe5MHSnznKh3mbytdKWuOJkJHWAk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1012599082815-conq3vg360mqoqr5r1uh025fn8l378qj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
